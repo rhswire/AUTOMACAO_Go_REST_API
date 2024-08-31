@@ -1,0 +1,50 @@
+name: Go_REST_API_2
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Check version Newman and Node
+        run: |
+          newman --version
+          node --version
+      
+      - name: Install Newman-Reporter-Htmlextra
+        run: npm install -g newman-reporter-htmlextra
+      
+      - name: Create result directory
+        run: mkdir -p ./result
+
+      - name: Execute collection
+        run: newman run ./Go_REST_API.postman_collection.json \
+              -g ./goRest.postman_globals.json \
+              -e ./goRest.postman_environment.json \
+              --env-var "token=${{ secrets.POSTMAN_API_TOKEN }}" \
+              --delay-request 1 \
+              --reporters cli,htmlextra \
+              --reporter-htmlextra-export ./result/Report.html
+
+      - name: Archive production artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: report
+          path: ./result/Report.html
