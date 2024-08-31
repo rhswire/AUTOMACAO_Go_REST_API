@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js environment
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.x' 
+          node-version: "20.x"
 
       - name: Install k6
         run: |
@@ -31,14 +31,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y k6
 
-      - name: Run k6 load test and generate report
-        run: k6 run --out junit=report.xml ./test.js
+      - name: Run k6 load test and generate JSON report
+        run: k6 run --out json=report.json test.js
 
-      - name: Upload k6 report
+      - name: Convert JSON report to JUnit XML
+        run: |
+          npm install -g k6-to-junit
+          k6-to-junit -i report.json -o report.xml
+
+      - name: Upload k6 JUnit report
         if: ${{ always() }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: k6-report
           path: report.xml
-
-
