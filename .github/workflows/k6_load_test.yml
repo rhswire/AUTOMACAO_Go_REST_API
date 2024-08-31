@@ -32,7 +32,7 @@ jobs:
           sudo apt-get install -y k6
 
       - name: Run k6 load test and generate JSON report
-        run: k6 run --out json=report.json test.js
+        run: k6 run --out json=report.json ./test.js
 
       - name: Convert JSON report to JUnit XML
         run: |
