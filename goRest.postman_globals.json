@@ -1,0 +1,123 @@
+{
+	"id": "23e23549-8187-45f1-8270-82a939a8f10c",
+	"values": [
+		{
+			"key": "Url",
+			"value": "https://gorest.co.in/public/v2/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Users",
+			"value": "users",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Posts",
+			"value": "posts",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Comments",
+			"value": "comments",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Todos",
+			"value": "todos",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "getRandomStatus",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "getRandomGender",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "checkUserCreation",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "createUser",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "validateUserEdit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyUserDeletion",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyPostCreation",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "createPostForUser",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyPostEdit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyPostDeletion",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyCommentCreation",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "createCommentForPostForUser",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyCommentEdit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "verifyCommentDeletion",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2024-08-31T09:25:45.913Z",
+	"_postman_exported_using": "Postman/11.10.1"
+}
