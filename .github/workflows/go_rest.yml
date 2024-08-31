@@ -41,7 +41,7 @@ jobs:
         # Runs a set of commands using the runners shell
       - name: Step 4 Archive production artifacts
         if: ${{ always() }} # This ensures the step runs even if the previous steps fail
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
               name: report
               path: ./result/Report.html
