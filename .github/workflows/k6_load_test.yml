@@ -1,0 +1,44 @@
+name: K6 Load Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x' 
+
+      - name: Install k6
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gnupg software-properties-common
+          sudo mkdir -p /etc/apt/keyrings
+          curl -fsSL https://dl.k6.io/key.gpg | sudo tee /etc/apt/keyrings/k6.asc
+          echo "deb [signed-by=/etc/apt/keyrings/k6.asc] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
+          sudo apt-get update
+          sudo apt-get install -y k6
+
+      - name: Run k6 load test and generate report
+        run: k6 run --out junit=report.xml ./test.js
+
+      - name: Upload k6 report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: k6-report
+          path: report.xml
+
+
