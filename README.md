@@ -6,7 +6,7 @@
 - [Casos_de_Teste] ([casos_de_teste.md](https://github.com/rhswire/AUTOMACAO_Go_REST_API/blob/main/casos_de_teste.md))
 
 
-### API Go
+### API Go REST
 
 # `https://gorest.co.in/`
 
