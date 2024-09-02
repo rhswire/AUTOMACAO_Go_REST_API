@@ -1,6 +1,6 @@
 ### Porque o Postman
 
-Escolhi o Postman para automatizar os testes da API REST da GoRest porque é uma ferramenta que possuo bastante conhecimento e prática e que me oferece muita flexibilidade para testar a API de diferentes maneiras. Uma das principais vantagens do Postman é que ele permite fazer tanto testes manuais quanto automatizados, por isso posso começar explorando a API manualmente, criando requisições e verificando as respostas de forma rápida e intuitiva.
+Escolhi o Postman para automatizar os testes da API Go REST porque é uma ferramenta que possuo bastante conhecimento e prática e que me oferece muita flexibilidade para testar a API de diferentes maneiras. Uma das principais vantagens do Postman é que ele permite fazer tanto testes manuais quanto automatizados, por isso posso começar explorando a API manualmente, criando requisições e verificando as respostas de forma rápida e intuitiva.
 
 Depois, com base nesses testes, consigo automatizar usando scripts de teste em JavaScript diretamente na ferramenta. Isso me permite validar os dados retornados pela API, checar o status das respostas, e garantir que tudo está no formato esperado, sem precisar ficar repetindo o trabalho manualmente.
 
@@ -15,7 +15,7 @@ Além de alguns testes nos outros endpoints no Postman, fiz 2 testes no endpoint
 
 ### Porque o K6
 
-Para implementar testes de carga na API GoRest, sugiro o uso da ferramenta K6. O K6 é uma ferramenta de código aberto moderna, focada em testes de carga e performance, que permite escrever scripts em JavaScript para simular usuários virtuais interagindo com a API.
+Para implementar testes de carga na API Go REST, sugiro o uso da ferramenta K6. O K6 é uma ferramenta de código aberto moderna, focada em testes de carga e performance, que permite escrever scripts em JavaScript para simular usuários virtuais interagindo com a API.
 
 É importante considerar que a API GoRest possui uma limitação no número de requisições que podem ser feitas por minuto com cada token de acesso. Por isso, os testes de carga precisam ser configurados de forma cuidadosa para respeitar essas restrições e evitar que o teste seja bloqueado devido ao excesso de requisições.
 
