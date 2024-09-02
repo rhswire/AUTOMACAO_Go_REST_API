@@ -1,14 +1,75 @@
-## Automação da API Go REST com Postman
+# Projeto de Automação de Testes da API Go REST
 
-Bem-vindo ao meu projeto!
+#### Bem-vindo ao meu projeto!
 
-- [Casos de Teste] (casos_de_teste.md)
+- [Respostas] ([respostas.md](https://github.com/rhswire/AUTOMACAO_Go_REST_API/blob/main/respostas.md))
+- [Casos_de_Teste] ([casos_de_teste.md](https://github.com/rhswire/AUTOMACAO_Go_REST_API/blob/main/casos_de_teste.md))
 
 
-Escolhi o Postman para automatizar os testes da API REST da GoRest porque é uma ferramenta que possuo bastante conhecimento e prática e que oferece muita flexibilidade para testar a API de diferentes maneiras. Uma das principais vantagens do Postman é que ele permite fazer tanto testes manuais quanto automatizados, o que é ótimo porque posso começar explorando a API manualmente, criando requisições e verificando as respostas de forma rápida e intuitiva.
+### API Go
 
-Depois, com base nesses testes manuais, posso facilmente automatizar o que precisa ser repetido usando scripts de teste em JavaScript diretamente na ferramenta. Isso me permite validar automaticamente os dados retornados pela API, checar o status das respostas, e garantir que tudo está no formato esperado, sem precisar repetir o trabalho manualmente.
+# `https://gorest.co.in/`
 
-Além disso, o Postman se integra muito bem com o GitHub Actions através do Newman, permitindo que eu configure a execução automática dos testes toda vez que houver uma mudança no código. Essa flexibilidade de alternar entre testes manuais e automatizados me dá o controle que preciso para garantir a qualidade do projeto, identificando problemas rapidamente e mantendo um ciclo de desenvolvimento ágil e seguro.
+### Git e GitHub
 
-Para mim, o Postman é uma escolha segura porque me permite ser mais eficiente, combinando testes exploratórios e automatizados, e ao mesmo tempo integrando tudo isso diretamente no pipeline de CI/CD, facilitando a colaboração com a equipe e garantindo que a API da GoRest funcione como esperado.
+No Git e GitHub, realize as seguintes etapas:
+
+### **Instalar e Configurar uma conta no Git** 
+
+Instale e Configure uma conta no Git. Para saber mais, [acesse o Git](https://git-scm.com/download/win).
+
+### **Para clonar o meu repositório do Git no computador**
+
+ ```sh default
+ git clone git@github.com:rhswire/AUTOMACAO_Go_REST_API.git
+ ```
+
+### **Verificando se tem alterações no repositório Git e baixar para o repositório local**
+
+ ```sh default
+ git pull
+ ```
+
+## Instalação do Newman via CLI
+```bash
+    npm install -g newman
+    npm install -g newman-reporter-htmlextra
+```
+
+## Execução com Newman via CLI
+```bash
+    newman run Go_REST_API.postman_collection.json -e goRest.postman_environment.json -g goRest.postman_globals.json
+```
+
+## Execução com Report html extra via CLI
+```bash
+    newman run Go_REST_API.postman_collection.json -e goRest.postman_environment.json -g goRest.postman_globals.json -r htmlextra
+```
+
+## Instalar o Postman
+
+Instale o Postman no computador. Para mais informações acesse o [site](https://www.postman.com/downloads/)
+
+## Importar a Collection e as Variáveis Globais e de Ambiente no Postman:
+
+1. Crie um Workspace no Postman caso não tenha. Para mais informações, acesse o [site](https://www.softwaretestinghelp.com/postman-collections-import-export-generate-code/).
+2. Importe os três arquivos JSON. Para mais informações, acesse o [site](https://www.softwaretestinghelp.com/postman-collections-import-export-generate-code/).
+
+## Instale o K6 no computador
+
+- Instale o K6 no computador. Para mais informasções, acesse [site](https://k6.io/docs/get-started/installation/)
+- Configure o PATH do k6.exe nas Variaveis de Ambiente do Sistema
+  
+## Execução K6 via CLI
+```bash
+    k6 run test.js
+```
+## Uso do Bearer Token
+
+Antes de rodar os testes da API no Postman e no Newman pela CLI é necessário gerar um Bearer Token pessoal no [site](https://gorest.co.in/) e salvar dentro da variável de ambiente "token" no Postman.
+
+Para rodar na pipeline, como o token é pessoal, criei uma variável secreta no GitHub e chamei no arquivo de configuração yml do GitHub Action, tanto nos testes de Postman quanto no teste do K6.
+
+## Projeto Desenvolvido por: 
+ | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/93127535" width=90><br/><sub>Raquel Swire Guimarães</sub>](https://github.com/rhswire)<br/>[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rhswire)](https://www.linkedin.com/in/rhswire) | 
+| :----------------------------------------------------------: | 

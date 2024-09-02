@@ -766,8 +766,8 @@ Verificar se a API permite a criação de um novo "todos" com dados válidos, ga
 - O sistema deve retornar um código de status HTTP `201 Created`.
 - O novo Todos deve ser criado com os dados fornecidos, e os detalhes devem ser salvos corretamente no banco de dados.
 - O registro deve conter os seguintes campos: `id`, `user_id`, `title`, `due_on`, e `status`.
-- Um ID de todos único deve ser gerado e retornado na resposta para identificar o novo Post.
-- Deve ser validado e interpretado o formatovalor `due_on`
+- Um ID de todos único deve ser gerado e retornado na resposta para identificar o novo Todos.
+- Deve ser validado e interpretado o formato valor `due_on`
 - Deve ser feita uma validação de schema
 
 
