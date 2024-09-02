@@ -36,14 +36,6 @@ jobs:
           POSTMAN_API_TOKEN: ${{ secrets.POSTMAN_API_TOKEN }}
         run: k6 run --out json=report.json ./test.js
 
-      - name: Convert JSON report to JUnit XML
-        run: |
-          npm install -g k6-to-junit
-          k6-to-junit -i report.json -o report.xml
+      - name: Print completion message
+        run: echo "K6 load test completed successfully!"
 
-      - name: Upload k6 JUnit report
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: k6-report
-          path: report.xml
