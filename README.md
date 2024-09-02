@@ -14,17 +14,17 @@
 
 No Git e GitHub, realize as seguintes etapas:
 
-### **Instalar e Configurar uma conta no Git** 
+#### **Instalar e Configurar uma conta no Git** 
 
 Instale e Configure uma conta no Git. Para saber mais, [acesse o Git](https://git-scm.com/download/win).
 
-### **Para clonar o meu repositório do Git no computador**
+#### **Para clonar o meu repositório do Git no computador**
 
  ```sh default
  git clone git@github.com:rhswire/AUTOMACAO_Go_REST_API.git
  ```
 
-### **Verificando se tem alterações no repositório Git e baixar para o repositório local**
+#### **Verificando se tem alterações no repositório Git e baixar para o repositório local**
 
  ```sh default
  git pull
