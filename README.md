@@ -6,11 +6,11 @@
 - [Casos_de_Teste] ([casos_de_teste.md](https://github.com/rhswire/AUTOMACAO_Go_REST_API/blob/main/casos_de_teste.md))
 
 
-### API Go REST
+## API Go REST
 
-# `https://gorest.co.in/`
+## `https://gorest.co.in/`
 
-### Git e GitHub
+## Git e GitHub
 
 No Git e GitHub, realize as seguintes etapas:
 
