@@ -3,12 +3,12 @@
 ## [**https://gorest.co.in/**](https://gorest.co.in/)
 
 
-### 1) <u>Caso de Teste:</u> Criar Novo USER - Dados Válidos (Happy Path)
+### 1) <u>Cenário de Teste:</u> Criar Novo USER - Dados Válidos (Happy Path)
 
 **Objetivo:**  
 Verificar a criação de um novo USER com dados válidos e com o token de autorização, garantindo que o USER seja criado corretamente e que um ID de USER seja gerado.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>   
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -30,12 +30,12 @@ Verificar a criação de um novo USER com dados válidos e com o token de autori
 
 ---
 
-### 2) <u>Caso de Teste:</u> Criar Novo USER - Sem Token 
+### 2) <u>Cenário de Teste:</u> Criar Novo USER - Sem Token 
 
 **Objetivo:**  
 Testar a criação de um novo USER sem fornecer um token de autorização e verificar se o sistema retorna a resposta adequada indicando falha na autenticação.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -55,12 +55,12 @@ Testar a criação de um novo USER sem fornecer um token de autorização e veri
 
 ---
 
-### 3) <u>Caso de Teste:</u> Criar Nov</u USER - Email Já Utilizado 
+### 3) <u>Cenário de Teste:</u> Criar Nov</u USER - Email Já Utilizado 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER com um email que já está registrado no sistema.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -80,12 +80,12 @@ Verificar o comportamento da API ao tentar criar um USER com um email que já es
 
 ---
 
-### 4) <u>Caso de Teste:</u> Criar Novo USER - Campo "Name" Vazio 
+### 4) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Name" Vazio 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo obrigatório "name".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -104,12 +104,12 @@ Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo ob
 - A resposta deve incluir uma mensagem indicando que o "Field": "name", "message": "can't be blank".
 
 ---
-## 5) <u>Caso de Teste:</u> Criar Novo USER - Campo "Email" Vazio (Caminho Negativo)
+## 5) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Email" Vazio (Caminho Negativo)
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER com o campo obrigatório "email" deixado vazio.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -128,12 +128,12 @@ Verificar o comportamento da API ao tentar criar um USER com o campo obrigatóri
 - A resposta deve incluir uma mensagem indicando que o "Field": "email", "message": "can't be blank".
   
 ---
-### 6) <u>Caso de Teste :</u> Criar Novo USER - Campo "Status" Vazio 
+### 6) <u>Cenário de Teste :</u> Criar Novo USER - Campo "Status" Vazio 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem preencher o campo obrigatório "status".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -153,12 +153,12 @@ Verificar o comportamento da API ao tentar criar um USER sem preencher o campo o
 
 ---
 
-### 7) <u>Caso de Teste:</u> Criar Novo USER - Campo "Gender" Vazio 
+### 7) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Gender" Vazio 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem preencher o campo obrigatório "gender".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -177,12 +177,12 @@ Verificar o comportamento da API ao tentar criar um USER sem preencher o campo o
 - A resposta deve incluir uma mensagem indicando que o "Field": "gender", "message": "can't be blank, can be male or female".
 
 ---
-### 8) <u>Caso de Teste:</u> Criar Novo USER - Email Inválido 
+### 8) <u>Cenário de Teste:</u> Criar Novo USER - Email Inválido 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER com um email em formato inválido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -202,12 +202,12 @@ Verificar o comportamento da API ao tentar criar um USER com um email em formato
 
 ---
 
-#### 9) <u>Caso de Teste:</u> Criar Novo USER - Valor Inválido para o Campo "Status" 
+#### 9) <u>Cenário de Teste:</u> Criar Novo USER - Valor Inválido para o Campo "Status" 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER com um valor inválido para o campo "status".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -226,12 +226,12 @@ Verificar o comportamento da API ao tentar criar um USER com um valor inválido 
 - A resposta deve incluir uma mensagem indicando que que "Field": "status", "message": "can't be blank"
 
 ---
-### 10) <u>Caso de Teste:</u> Criar Novo USER - Valor Inválido para o Campo "Gender" 
+### 10) <u>Cenário de Teste:</u> Criar Novo USER - Valor Inválido para o Campo "Gender" 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER com um valor inválido para o campo "gender".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -251,12 +251,12 @@ Verificar o comportamento da API ao tentar criar um USER com um valor inválido 
   
 ---
 
-### 11) <u>Caso de Teste:</u> Criar Novo USER - Campo "Name" Ausente
+### 11) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Name" Ausente
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo obrigatório "name".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -275,12 +275,12 @@ Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo ob
 - A resposta deve incluir uma mensagem indicando que "Field": "name", "message": "can't be blank".
 
 ---
-### 12) <u>Caso de Teste:</u> Criar Novo USER - Campo "Email" Ausente
+### 12) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Email" Ausente
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo obrigatório "email".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -300,12 +300,12 @@ Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo ob
 
 ----
 
-### 13) <u>Caso de Teste:</u> Criar Novo USER - Campo "Status" Ausente 
+### 13) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Status" Ausente 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo obrigatório "status".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -324,12 +324,12 @@ Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo ob
 - A resposta deve incluir uma mensagem indicando que "Field": "status", "message": "can't be blank".
 
 ---
-### 14) <u>Caso de Teste:</u> Criar Novo USER - Campo "Gender" Ausente 
+### 14) <u>Cenário de Teste:</u> Criar Novo USER - Campo "Gender" Ausente 
 
 **Objetivo:**  
 Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo obrigatório "gender".
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -349,12 +349,12 @@ Verificar o comportamento da API ao tentar criar um USER sem fornecer o campo ob
  
 ---
 
-### 15) <u>Caso de Teste</u> 6: Criar Novo USER - Todos os Campos Ausentes 
+### 15) <u>Cenário de Teste</u> 6: Criar Novo USER - Todos os Campos Ausentes 
 
 **Objetivo:**  
 Testar o comportamento do sistema quando uma requisição é feita sem nenhum campo obrigatório para a criação de um novo USER.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** POST
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Corpo da Requisição (JSON):**
@@ -374,12 +374,12 @@ Testar o comportamento do sistema quando uma requisição é feita sem nenhum ca
   
 ---
 
-### 16) <u>Caso de Teste:</u> Users - Obter Todos os USERS (Happy Path)
+### 16) <u>Cenário de Teste:</u> Users - Obter Todos os USERS (Happy Path)
 
 **Objetivo:**  
 Verificar se é possível recuperar a lista de todos os usuários com uma requisição válida.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users`
 - **Cabeçalhos:** Inclui o token de autorização necessário.
@@ -389,12 +389,12 @@ Verificar se é possível recuperar a lista de todos os usuários com uma requis
 - - A resposta deve conter uma lista de usuários com os seguintes campos: `id`, `name`, `email`, `gender`, e `status`.
 
 ---
-### 17) <u>Caso de Teste:</u> Users - Obter Todos os Usuários com Parâmetro de Página (Happy Path)
+### 17) <u>Cenário de Teste:</u> Users - Obter Todos os Usuários com Parâmetro de Página (Happy Path)
 
 **Objetivo:**  
 Verificar se a API retorna corretamente uma lista de usuários ao buscar todos os usuários com o parâmetro de página especificado.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users?page=5`
 
@@ -411,12 +411,12 @@ Não aplicável (requisição GET).
 
 
 ---
-### 18) <u>Caso de Teste:</u> Users - Pesquisar Usuários por Nome (Happy Path)
+### 18) <u>Cenário de Teste:</u> Users - Pesquisar Usuários por Nome (Happy Path)
 
 **Objetivo:**  
 Verificar se a API retorna corretamente a lista de usuários ao buscar pelo nome.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users?name={userName}`
 
@@ -432,12 +432,12 @@ Não aplicável (requisição GET).
 - Todos os usuários na resposta devem corresponder ao nome especificado na busca.
   
 ---
-### 19) <u>Caso de Teste:</u> Users - Obter Usuário por ID Válido (Happy Path)
+### 19) <u>Cenário de Teste:</u> Users - Obter Usuário por ID Válido (Happy Path)
 
 **Objetivo:**  
 Verificar se a API retorna corretamente os detalhes de um usuário ao buscar por um ID válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}`
 
@@ -453,12 +453,12 @@ Não aplicável (requisição GET).
 - Os dados retornados devem corresponder ao ID especificado na solicitação.
 
 ---
-### 20) <u>Caso de Teste:</u> Users - Obter Usuário por ID Inválido
+### 20) <u>Cenário de Teste:</u> Users - Obter Usuário por ID Inválido
 
 **Objetivo:**  
 Verificar se a API retorna a resposta correta ao tentar obter um usuário com um ID inválido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users/1785497894528`
 
@@ -474,12 +474,12 @@ Não aplicável (requisição GET).
 
 ---
 
-### 21) <u>Caso de Teste:</u> Users - Obter Usuário por ID Inválido de Texto (Caminho Negativo)
+### 21) <u>Cenário de Teste:</u> Users - Obter Usuário por ID Inválido de Texto (Caminho Negativo)
 
 **Objetivo:**  
 Verificar se a API retorna a resposta correta ao tentar obter um usuário utilizando um ID inválido de texto.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users/test` (com `userId` como uma string inválida "test")
 
@@ -495,12 +495,12 @@ Não aplicável (requisição GET).
   
 ---
 
-### 22) <u>Caso de Teste:</u> Users - Obter Usuário por ID Inválido com Caracteres Especiais (Caminho Negativo)
+### 22) <u>Cenário de Teste:</u> Users - Obter Usuário por ID Inválido com Caracteres Especiais (Caminho Negativo)
 
 **Objetivo:**  
 Verificar se a API retorna a resposta correta ao tentar obter um usuário utilizando um ID inválido contendo caracteres especiais.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** GET
 - **Endpoint:** `https://gorest.co.in/public/v2/users/@#$` (com `userId` contendo caracteres especiais "@#$")
 
@@ -516,12 +516,12 @@ Não aplicável (requisição GET).
 
 ---
 
-### 23) <u>Caso de Teste:</u> USER -  Atualizar USER "Name" (Happy Path)
+### 23) <u>Cenário de Teste:</u> USER -  Atualizar USER "Name" (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a atualização correta dos detalhes de um usuário existente.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** PUT
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}`
 - **Corpo da Requisição (JSON):**
@@ -543,12 +543,12 @@ Verificar se a API permite a atualização correta dos detalhes de um usuário e
 
 ---
 
-### 24) <u>Caso de Teste:</u> USER -  Atualizar USER "Name" (Happy Path)
+### 24) <u>Cenário de Teste:</u> USER -  Atualizar USER "Name" (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a atualização correta dos detalhes de um usuário existente.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** PATH
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}`
 - **Corpo da Requisição (JSON):**
@@ -567,12 +567,12 @@ Verificar se a API permite a atualização correta dos detalhes de um usuário e
 
 ---
 
-### 25) <u>Caso de Teste:</u> USER - Deletar Usuário por ID Válido (Happy Path)
+### 25) <u>Cenário de Teste:</u> USER - Deletar Usuário por ID Válido (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a exclusão correta de um usuário existente por um ID válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `DELETE`
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}`
 
@@ -587,13 +587,13 @@ Resposta vazia com o status `204 No Content`.
 
 ---
 
-### 26) <u>Caso de Teste:</u> Criar Novo Post - Dados Válidos (Happy Path)
+### 26) <u>Cenário de Teste:</u> Criar Novo Post - Dados Válidos (Happy Path)
 
 **Objetivo:**  
 
 Verificar a criação de um novo Post com dados válidos, garantindo que o Post seja criado corretamente e que um ID de Post seja gerado.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `POST`
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}/posts`
 - **Corpo da Requisição (JSON):**
@@ -613,12 +613,12 @@ Verificar a criação de um novo Post com dados válidos, garantindo que o Post 
 - Um ID de Post único deve ser gerado e retornado na resposta para identificar o novo Post.
 
 ---
-### 27) <u>Caso de Teste:</u> Posts - Obter Posts por ID de Usuário Válido (Happy Path)
+### 27) <u>Cenário de Teste:</u> Posts - Obter Posts por ID de Usuário Válido (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a recuperação correta dos posts de um usuário existente utilizando um ID de usuário válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `GET`
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}/posts`
 
@@ -641,12 +641,12 @@ Verificar se a API permite a recuperação correta dos posts de um usuário exis
  ```
 ---
 
-### 27) <u>Caso de Teste:</u> Posts - Caso de Teste:</u> Atualizar Título do Post (Happy Path)
+### 27) <u>Cenário de Teste:</u> Posts - Caso de Teste:</u> Atualizar Título do Post (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a atualização correta do título de um post existente utilizando um ID de post válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `PATCH`
 - **Endpoint:** `https://gorest.co.in/public/v2/posts/{postId}`
 
@@ -666,12 +666,12 @@ Verificar se a API permite a atualização correta do título de um post existen
 
 ---
 
-### 28) <u>Caso de Teste:</u> Adicionar Comentário a um Post (Happy Path)
+### 28) <u>Cenário de Teste:</u> Adicionar Comentário a um Post (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a adição correta de um comentário a um post existente utilizando um ID de post válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `POST`
 - **Endpoint:** `https://gorest.co.in/public/v2/posts/{postId}/comments`
 
@@ -692,12 +692,12 @@ Verificar se a API permite a adição correta de um comentário a um post existe
 - O registro deve conter os seguintes campos: `id`, `post_id`, `name`, `email`, e `body`.
 - Um ID de Comment único deve ser gerado e retornado na resposta para identificar o novo Post.
 
-### 29) <u>Caso de Teste:</u> Obter Comentário por ID de Post Válido (Happy Path)
+### 29) <u>Cenário de Teste:</u> Obter Comentário por ID de Post Válido (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a recuperação correta dos comentários associados a um post existente utilizando um ID de post válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `GET`
 - **Endpoint:** `https://gorest.co.in/public/v2/comments?post_id={postId}`
 
@@ -721,12 +721,12 @@ Verificar se a API permite a recuperação correta dos comentários associados a
 ```
 ---
 
-### 30) <u>Caso de Teste:</u> Excluir Comentário por ID de Comentário Válido (Happy Path)
+### 30) <u>Cenário de Teste:</u> Excluir Comentário por ID de Comentário Válido (Happy Path)
 
 **Objetivo:**  
 Garantir que a API exclua corretamente um comentário existente quando fornecido um ID de comentário válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `DELETE`
 - **Endpoint:** `https://gorest.co.in/public/v2/comments/{commentId}`
 
@@ -742,12 +742,12 @@ Garantir que a API exclua corretamente um comentário existente quando fornecido
 
 ---
 
-### 31) <u>Caso de Teste:</u> Criar Novo Todo (Happy Path)
+### 31) <u>Cenário de Teste:</u> Criar Novo Todo (Happy Path)
 
 **Objetivo:**  
 Verificar se a API permite a criação de um novo "todos" com dados válidos, garantindo que ele seja salvo corretamente e que um ID único seja gerado.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `POST`
 - **Endpoint:** `https://gorest.co.in/public/v2/users/{userId}/todos`
 
@@ -797,12 +797,12 @@ Verificar se a API permite a criação de um novo "todos" com dados válidos, ga
 
 ```
 ---
-### 32) <u>Caso de Teste:</u> Validar Schema, Campo `due_on`, e Status `completed` para Todos (Happy Path)
+### 32) <u>Cenário de Teste:</u> Validar Schema, Campo `due_on`, e Status `completed` para Todos (Happy Path)
 
 **Objetivo:**  
 Verificar se a API retorna todos os "todos" com um schema válido, se pelo menos um "todo" possui status `completed`, e se o campo `due_on` está em um formato válido.
 
-**Cenário de Teste:**  
+<u>**Caso de Teste:**</u>  
 - **Método:** `GET`
 - **Endpoint:** `https://gorest.co.in/public/v2/todos`
 
