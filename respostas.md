@@ -6,7 +6,7 @@ Depois, com base nesses testes, consigo automatizar usando scripts de teste em J
 
 Além disso, o Postman se integra muito bem com o GitHub Actions através do Newman, permitindo que eu configure a execução automática dos testes toda vez que houver uma mudança no código. Essa flexibilidade de alternar entre testes manuais e automatizados me dá o controle que preciso para garantir a qualidade dos projetos, identificando problemas rapidamente e mantendo um ciclo de desenvolvimento ágil e seguro.
 
-Para mim, o Postman é uma escolha segura porque me permite ser mais eficiente, combinando testes exploratórios e automatizados, e ao mesmo tempo integrando tudo isso diretamente no pipeline de CI/CD através do Github Action, o que facilita a colaboração quando há uma equipe envolvida e garantindo uma API funcionando como esperado.
+Para mim, o Postman é uma escolha segura porque me permite ser mais eficiente, combinando testes exploratórios e automatizados, e ao mesmo tempo integrando tudo isso diretamente no pipeline de CI/CD através do Github Action, o que facilita a colaboração quando há uma equipe envolvida e garantindo que a API funcione como esperado.
 
 ### Endpoint "Todos"
 
