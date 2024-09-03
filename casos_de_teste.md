@@ -1,6 +1,6 @@
 ## Alguns casos de testes da Collection Go REST API
 
-# `https://gorest.co.in/`
+## [**https://gorest.co.in/**](https://gorest.co.in/)
 
 
 ### 1) <u>Caso de Teste:</u> Criar Novo USER - Dados Válidos (Happy Path)
